@@ -80,7 +80,7 @@ section ul {
   display: flex;
   list-style: none;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 10px;
 }
 
 section div {
@@ -114,7 +114,6 @@ section ul li:hover {
 .formations div ul li, .languages div ul li {
   transition: none;
   transform: none;
-  list-style-type: disc;
 }
 
 .formations p {
@@ -139,6 +138,12 @@ section ul li:hover {
 .experiences ul , .languages ul{
   display: block;
 }
+
+section div ul li p {
+  text-indent: 14px;
+}
+
+
 
 /* animation */
 main section:nth-child(1) {
