@@ -1,0 +1,176 @@
+* {
+  /* Resetando as margens e preenchimentos do navegador */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  /* Fonte da página */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 160%;
+}
+
+body {
+  /*background*/
+  background-image: url('./assets/bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #121214;
+}
+
+header {
+  margin-top: 32px;
+  height: calc(120px + 32px);
+}
+
+header div {
+  /* Especificações da caixa do topo onde fica a foto do usuário */
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  background-image: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%);
+  border-radius: 50%;
+  padding: 4px;
+  transition: transform 0.5s;
+  animation: fromTop 1s backwards;
+  animation-delay: 0.4;
+}
+
+header div:hover {
+  transform: scale(1.2);
+}
+
+header div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  /* tamanho das caixas */
+  max-width: 800px;
+  width: 90%;
+  gap: 24px;
+  display: grid;
+  margin: 32px auto;
+}
+
+main section {
+  animation: grow 0.6s backwards;
+}
+
+div h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+
+
+section {
+  color: white;
+  border-radius: 10px;
+  padding-top: 4px;
+  background-image: linear-gradient(90deg, #c91842 0%, #5cc2e2 100%);
+}
+
+section ul {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+section div {
+  background-color: #262629;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #c1c1c1;
+  padding: 0.5rem;
+}
+
+section ul li {
+  transition: transform 0.5s;
+}
+
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.film-list img {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid #555555;
+}
+
+.formations div ul li, .languages div ul li {
+  transition: none;
+  transform: none;
+  list-style-type: disc;
+}
+
+.formations p {
+  padding: 0;
+}
+
+.lightier {
+  color: #747474;
+}
+
+.channel-list img {
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid #443e54;
+}
+
+.experiences h3 {
+  padding-top: 1.5rem;
+
+}
+
+.experiences ul , .languages ul{
+  display: block;
+}
+
+/* animation */
+main section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+main section:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+main section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX();
+  }
+
+  from {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
