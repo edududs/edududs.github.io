@@ -8,3 +8,4 @@ copy ./*.html /usr/share/nginx/html/
 copy ./*.css /usr/share/nginx/html/
 copy ./*.jpg /usr/share/nginx/html/
 copy ./*.js /usr/share/nginx/html/
+copy ./assets/* /usr/share/nginx/html/assets/
