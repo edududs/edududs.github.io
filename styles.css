@@ -116,7 +116,7 @@ section ul li:hover {
   transform: none;
 }
 
-.formations p {
+.formations p , .habilities p{
   padding: 0;
 }
 
