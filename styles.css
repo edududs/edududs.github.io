@@ -130,6 +130,7 @@ section ul li:hover {
   border: 1px solid #443e54;
 }
 
+
 .experiences h3 {
   padding-top: 1.5rem;
 
@@ -139,14 +140,33 @@ section ul li:hover {
   display: block;
 }
 
-.flags {
+.curriculo-flags-container {
   max-width: 800px;
   width: 90%;
   gap: 24px;
   margin: 32px auto;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  /* Adiciona espaço entre os elementos */
+  align-items: center;
+  /* Alinha verticalmente ao centro */
+  color: #4f8191;
+  text-decoration: none;
+  transition: transform 0.5s;
 }
 
+/* Adicione esta regra CSS para o currículo */
+.curriculo-link {
+  color: #a7c6ce;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.curriculo-link a:hover {
+  transform: scale(1.1);
+}
+
+/* Adicione esta regra CSS para as bandeiras */
 .flags img {
   width: 40px;
   border-radius: 40%;
@@ -177,6 +197,10 @@ main section:nth-child(2) {
 
 main section:nth-child(3) {
   animation-delay: 0.6s;
+}
+
+body div a:nth-child(1) {
+  text-align: left;
 }
 
 @keyframes grow {
